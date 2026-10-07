@@ -1,0 +1,11 @@
+id = "common-lisp"
+name = "Common Lisp"
+description = "Common Lisp syntax highlighting and structural editing support"
+version = "0.1.0"
+schema_version = 1
+authors = ["Ruiqi Lei <ruiqi.lei25@outlook.com>"]
+repository = "https://github.com/rn7s2/zed-common-lisp"
+
+[grammars.commonlisp]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-commonlisp"
+rev = "32323509b3d9fe96607d151c2da2c9009eb13a2f"
