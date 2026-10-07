@@ -2,7 +2,7 @@ name = "Common Lisp"
 grammar = "commonlisp"
 path_suffixes = ["lisp", "lsp", "cl", "asd"]
 line_comments = ["; "]
-block_comment = ["#|", "|#"]
+block_comment = { start = "#|", end = "|#", prefix = "", tab_size = 1 }
 tab_size = 2
 hard_tabs = false
 autoclose_before = ";:.,=}])>` \n\t\""

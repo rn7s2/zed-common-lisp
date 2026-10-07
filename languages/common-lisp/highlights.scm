@@ -31,8 +31,12 @@
 (package_lit
   package: (_) @type)
 
-; Calls and definitions
+; Calls and definitions. Keep the special-form captures below this section so
+; keywords take precedence over the broad call-head rule.
 (list_lit . (sym_lit) @function)
+(list_lit .
+  (package_lit
+    symbol: (sym_lit) @function))
 
 (defun_header
   keyword: (defun_keyword) @keyword
